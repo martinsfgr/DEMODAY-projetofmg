@@ -41,6 +41,26 @@ def cadastro_escola(request):
     }
     return render(request, 'cadastro.html', context)
 
+def login_aluno(request):
+    context = {}
+    if request.method == "POST":
+        nome_aluno = request.POST.get('nomealuno')
+        codigo_aluno = request.POST.get('sobrenome')
+        aluno_nome = Aluno.objects.filter(nome_aluno=nome_aluno).first()
+        aluno_codigo = Aluno.objects.filter(sobrenome_aluno=codigo_aluno).first()
+
+        if aluno_nome is None:
+            messages.error(request, ':(')
+
+        elif aluno_nome and aluno_codigo is None:
+            messages.error(request, ':(')
+
+        else:
+            context = {'aluno': aluno_nome}
+            return render(request, 'aluno.html', context)
+
+    return render(request, 'loginaluno.html', context)
+
 def login_escola(request):
     if request.method == "POST":
         username = request.POST.get('username')
@@ -57,6 +77,10 @@ def login_escola(request):
 def logout_user(request):
     logout(request)
     return redirect('/login')
+
+def aluno(request):
+    context = {}
+    return render(request, 'aluno.html', context)
 
 @login_required(login_url='/login')
 def escola(request):
