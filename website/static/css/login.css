@@ -206,3 +206,12 @@ input[type=submit]:hover{
 .ar_erro{
     width: 450px;
 }
+
+.erro_al{
+    margin-top: 450px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
