@@ -1,0 +1,113 @@
+body{
+    display: grid;
+    grid-template-areas: 'nav nav nav nav'
+                        'aside section section section'
+                        'aside section section section'
+                        'footer footer footer footer';
+    grid-template-rows: 11.5vh 44vh 44vh 30vh;
+    grid-template-columns: 24.79vw 24.79vw 24.79vw 24.79vw;
+    font-family: 'Spinnaker', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+nav{
+    grid-area: nav;
+}
+
+aside{
+    grid-area: aside;
+    background: rgb(231, 231, 231);
+}
+
+section{
+    grid-area: section;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.not_auth{
+    position: absolute;
+    top: 121px;
+    left: 490px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.not_auth h1{
+    margin-bottom: 0px;
+}
+
+.icon_person{
+    width: 170px;
+}
+
+.img_ip{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.informacoes_aluno{
+    color: #327035;
+    font-weight: lighter;
+    font-size: 20px;
+    width: 286.617px;
+    margin: 0px;
+    margin-top: 5px;
+    border-bottom: 5px solid #0e1214;
+}
+
+h2{
+    text-align: center;
+}
+
+h4{
+    font-size: 26px;
+    margin-bottom: 0;
+    color: #0e1214;
+}
+
+.p_section{
+    padding-top: 30px;
+    font-size: 30px;
+}
+
+.div_infal{
+    padding-left: 20px;
+}
+
+.pnl_aluno{
+    width: 715px;
+    height: 92px;
+    margin-left: 170px;
+    margin-top: 35px;
+}
+
+.pont_aluno{
+    color: white;
+    text-align: center;
+    width: 45%;
+    height: 100px;
+    background-color: #3c7c21;
+    border-radius: 7px;
+    margin-top: 110px;
+    margin-left: 285px;
+}
+
+.p_link{
+    text-align: center;
+    font-size: 20px;
+    width: 75%;
+    height: 100px;
+    margin-left: 135px;
+}
+
+.p_link a{
+    color: #1e3459;
+    text-decoration: none;
+}

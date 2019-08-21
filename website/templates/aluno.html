@@ -1,1 +1,53 @@
-<h1>ALUNO</h1>
+{% extends 'shared/layout_aluno.html' %}
+
+{% block content %}
+
+<aside>
+    <div class="img_ip">
+        <img class="icon_person" src="/static/img/aluno/pessoa.png" alt="">
+    </div>
+    
+    <div>
+        <div class="div_infal">
+            <h4>Escola:</h4>
+            <p class="informacoes_aluno">{{aluno.escola}}</p>
+        </div>
+
+        <div class="div_infal">
+            <h4>Nome:</h4>
+            <p class="informacoes_aluno">{{aluno.nome_aluno}} {{aluno.sobrenome_aluno}}</p>
+        </div>
+
+        <div class="div_infal">
+            <h4>Turma:</h4>
+            <p class="informacoes_aluno">{{aluno.turma_aluno}}</p>
+        </div>
+    </div>
+
+</aside>
+
+<section>
+    <img class="pnl_aluno" src="/static/img/aluno/paineldoaluno.png" alt="">
+    <h2>Seja bem-vindo(a), {{aluno.nome_aluno}}!</h2>
+
+    <div class="pont_aluno">
+        <p class="p_section">Você tem {{aluno.pontuacao_aluno}} pontos!</p>
+    </div>
+
+    <div>
+        <p class="p_link"><a href="/loja">Clique aqui</a> para visitar a lojinha e dar uma olhada nos itens disponíveis!</p>
+    </div>
+
+</section>
+
+{% endblock %}
+
+<!-- {% if aluno is None %}
+<div class="not_auth">
+    <h1>Você não está logado!</h1>
+    <p>
+        <a href="/login">Clique aqui para logar</a>
+    </p>
+</div>
+{% else %} -->
+<!-- {% endif %} -->
