@@ -12,7 +12,7 @@ label[for=genero_aluno], #genero_aluno{
 }
 
 section{
-    background-image: url('/static/img/escola/bgstar.jpg');
+    background-image: url('/static/img/escola/fundo.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -26,7 +26,7 @@ section{
     align-items: center;
     width: 50%;
     height: 70%;
-    background-color: #0e1214ab;
+    background-color: #0e1214e5;
     border-radius: 5px;
 }
 
@@ -72,7 +72,7 @@ input[type=submit]{
     color: white;
     font-weight: bolder;
     font-size: 18px;
-    background-color: #327035;
+    background-color: #459249;
     cursor: pointer;
     border-radius: 5px;
     position: relative;
@@ -80,7 +80,16 @@ input[type=submit]{
 }
 
 input[type=submit]:hover{
-    background-color: rgb(214, 200, 5);
+    background-color: #327035;
     transition: 1s;
     border-radius: 7px;
+}
+
+.back_pt{
+    position: absolute;
+    top: 115px;
+    z-index: 2;
+    bottom: 465px;
+    left: 913.6px;
+    width: 65px;
 }

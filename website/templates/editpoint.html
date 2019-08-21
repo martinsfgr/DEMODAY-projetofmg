@@ -6,12 +6,13 @@
 {% endblock %}
 
 {% block titulo %}
-<title>Edição de Aluno</title>
+<title>Atribuição de Pontos</title>
 {% endblock %}
 
 {% block conteudo %}
 
 <div class="d_white">
+    <a href="/pontuacao"><img class="back_pt" src="/static/img/escola/testeback.png" alt=""></a>
     <div class="edicao_aluno">
         <form method="POST">
             {% csrf_token %}

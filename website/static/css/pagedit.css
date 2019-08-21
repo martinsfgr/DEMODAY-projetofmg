@@ -131,3 +131,12 @@ section{
     position: absolute;
     top: 722px;
 }
+
+.back_pnl{
+    position: absolute;
+    z-index: 2;
+    bottom: 465px;
+    width: 65px;
+    top: 45px;
+    left: 1271.6px;
+}
