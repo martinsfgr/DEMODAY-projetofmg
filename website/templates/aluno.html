@@ -2,6 +2,15 @@
 
 {% block content %}
 
+{% if aluno is None %}
+<div class="not_auth">
+    <h1>Você não está logado!</h1>
+    <p>
+        <a href="/login">Clique aqui para logar</a>
+    </p>
+</div>
+{% else %}
+
 <aside>
     <div class="img_ip">
         <img class="icon_person" src="/static/img/aluno/pessoa.png" alt="">
@@ -40,14 +49,5 @@
 
 </section>
 
+{% endif %}
 {% endblock %}
-
-<!-- {% if aluno is None %}
-<div class="not_auth">
-    <h1>Você não está logado!</h1>
-    <p>
-        <a href="/login">Clique aqui para logar</a>
-    </p>
-</div>
-{% else %} -->
-<!-- {% endif %} -->
