@@ -1,1 +1,170 @@
-<h1>LOJA</h1>
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Spinnaker&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script defer src="{% static 'js/loja.js'%}"></script>
+    <link rel="stylesheet" href="{% static 'css/loja.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nav.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    <script defer src="{% static 'js/loja.js' %}"></script>
+    <title>Lojinha</title>
+</head>
+
+<body>
+    {% include 'shared/nav.html' %}
+    <main class="loja">
+        <div class="titulo">
+            <div>
+            </div>
+        </div>
+        <div class="itens">
+            <div>
+                <img class="pnl_loja" src="/static/img/loja/lojinha.png" alt="">
+            </div>
+            <div class="fileira">
+                <div class="item_loja">
+                    <span class="preco">
+                        40<img class="moeda" src="/static/img/loja/moedinha.png">
+                    </span>
+                    <p>Video-Game</p>
+                    <img class="item_avenda" src="static/img/loja/brinquedo1.jpg" alt="">
+                </div>
+
+                <div class="item_loja">
+                    <span class="preco">
+                        10<img class="moeda" src="/static/img/loja/moedinha.png">
+                    </span>
+                    <p>Super Raquete</p>
+                    <img class="item_avenda" src="static/img/loja/brinquedo2.jpg" alt="">
+                </div>
+
+                <div class="item_loja">
+                    <span class="preco">
+                        25<img class="moeda" src="/static/img/loja/moedinha.png">
+                    </span>
+                    <p>Pula Pirata</p>
+                    <img class="item_avenda" src="static/img/loja/brinquedo3.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="fileira">
+                <div class="item_loja">
+                    <span class="preco">
+                        35<img class="moeda" src="/static/img/loja/moedinha.png">
+                    </span>
+                    <p>Super Mochila</p>
+                    <img class="item_avenda"src="static/img/loja/brinquedo4.jpg" alt="">
+                </div>
+                <div class="item_loja">
+                    <span class="preco">
+                        15<img class="moeda" src="/static/img/loja/moedinha.png">
+                    </span>
+                    <p>Canetinhas</p>
+                    <img class="item_avenda" src="static/img/loja/brinquedo5.jpg" alt="">
+                </div>
+                <div class="item_loja">
+                    <span class="preco">
+                        15<img class="moeda" src="/static/img/loja/moedinha.png">
+                    </span>
+                    <p>Cubo Mágico</p>
+                    <img class="item_avenda" src="static/img/loja/brinquedo6.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="botao_loja">
+            <div class="papel">
+                <img src="static/img/loja/papel.png" alt="" srcset="">
+
+            </div>
+            <div class="plastico">
+                <img src="static/img/loja/plastico.png" alt="" srcset="">
+            </div>
+            <div class="metal">
+                <img src="static/img/loja/metal.png" alt="" srcset="">
+            </div>
+            <div class="vidro">
+                <img src="static/img/loja/vidro.png" alt="" srcset="">
+            </div>
+        </div>
+    </main>
+
+    <span id="materiais">
+        <div class="centro">
+            <a id="fechar">x</a>
+            <div id="material_Papel">
+                <span>
+                    <img src="static/img/loja/papel/bag.png">
+                    <p>Caixas de Papelão</p>
+                </span>
+                <span>
+                    <img src="static/img/loja/papel/text-documents.png">
+                    <p>Folhas Usadas</p>
+                </span>
+                <span>
+                    <img src="static/img/loja/papel/toilet-paper.png">
+                    <p>Rolinhos do Papel Higiênico</p>
+                </span>
+            </div>
+
+
+            <div id="material_Plastico">
+                <span>
+                    <img src="static/img/loja/plastico/plastic.png">
+                    <p>Garrafas Pet</p>
+                </span>
+                <span>
+                    <img src="static/img/loja/plastico/shampoo.png">
+                    <p>Frascos de Shampoo e Detergente</p>
+                </span>
+                <span>
+                    <img src="static/img/loja/plastico/yogurt.png">
+                    <p>Potinhos de Danone</p>
+                </span>
+            </div>
+
+
+            <div id="material_Metal">
+                <span>
+                    <img src="static/img/loja/metal/can.png">
+                    <p>Latinhas de Refrigerante</p>
+                </span>
+                <span>
+                    <img src="static/img/loja/metal/canned-food.png">
+                    <p>Latinhas de Alimentos</p>
+                </span>
+                <span>
+                    <img src="static/img/loja/metal/toothpaste.png">
+                    <p>Tubos de Pasta de Dente</p>
+                </span>
+            </div>
+
+
+            <div id="material_Vidro">
+                <span>
+                    <img src="static/img/loja/vidro/cheese.png">
+                    <p>Recipientes de Requeeijão</p>
+                </span>
+                <span>
+                    <img src="static/img/loja/vidro/perfume.png">
+                    <p>Frascos de Perfume</p>
+                </span>
+                <span>
+                    <img src="static/img/loja/vidro/tonic.png">
+                    <p>Frascos de Remédio</p>
+                </span>
+            </div>
+
+        </div>
+    </span>
+    {% include 'shared/footer.html' %}
+
+</body>
+
+</html>

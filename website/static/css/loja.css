@@ -1,0 +1,234 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.loja{
+    display: grid;
+    grid-template-areas: 'titulo titulo'
+                        ' botao_loja itens'
+                        'botao_loja itens'
+                        'botao_loja itens';
+    grid-template-columns: 24vw 75.6vw;
+    grid-template-rows: 45vh 55vh 55vh 55vh;
+}
+
+nav{
+    z-index: 5;
+}
+
+.titulo{
+    grid-area: titulo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/static/img/loja/img2.jpg");
+}
+
+.titulo div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, 0.349);
+    width: 100%;
+    height: 100%;
+}
+
+.titulo div h2{
+    font-size : 40px;
+    font-weight: bolder;
+    color: #e6f1e1;
+}
+
+.botao_loja{
+    grid-area: botao_loja;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #209d73;
+    border-top: 10px solid  #cef2bd;
+    border-bottom: 10px solid #cef2bd;
+    border-right-width: 15px; 
+    border-right-style: solid; 
+    border-right-color: #cff2bf;
+    height: 1083.1px;
+}
+
+.botao_loja h3{
+    position: absolute;
+    bottom: 250px;
+    font-size : 25px;
+    color: #e8f8ff;
+}
+
+.botao_loja div{
+    padding: 20px;
+}
+
+.botao_loja div img:hover{
+    height: 150px;
+    width: 160px;
+    transition: 1s;
+}
+
+
+.botao_loja div img{
+    background-color: #fdfdfd;
+    height: 140px;
+    width: 150px;
+    border: #5eadcf63 10px solid;
+    border-radius: 45px;
+}
+
+.itens{
+    grid-area: itens;
+    border-top: 10px solid  #cef2bd;
+    padding-top: 100px;
+}
+
+.fileira{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.fileira div{
+    border: #209d73 3px solid;
+    border-radius: 10px;
+    padding: 30px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    text-decoration: none;
+    font-size: 25px;
+    color: #209d73;
+}
+
+.fileira div:hover{
+    background-color: #209d7356;
+}
+
+.fileira{
+    padding: 50px;
+    padding-top: 20px;
+}
+
+.preco{
+   display: flex;
+   align-items: center;
+}
+
+.moeda{
+    height: 40px;
+    width: 40px;
+}
+
+.fileira div p{
+    border-top: #0e1214 2px solid;
+    padding-top: 10px;
+}
+
+.item_avenda{
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+    padding-top: 15px;
+}
+
+#materiais{
+    display: none;
+    z-index: 4;
+    position: absolute;
+    width: 100%;
+    height: 210%;
+    top: 1px;
+    background: rgba(0, 0, 0, 0.349);
+}
+
+.centro{
+    padding: 500px;
+    padding-left: 420px;
+    display: flex;
+    align-items: center;
+
+}
+
+#material_Papel, #material_Plastico,
+#material_Metal, #material_Vidro  {
+    background-color: #fdfdfd;
+    padding: 40px;
+    padding-left: 40px;
+    padding-right: 50px;
+    border-radius: 10px;
+    align-items: center;
+    flex-direction: row;
+    border: #cef2bd 30px solid;
+
+}
+
+.centro div span{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.centro div span p{
+    text-align: center;
+    max-width:100px;
+}
+
+#fechar{
+    background-color: #0e121462;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 20px;
+    position: relative;
+    bottom: 90px;
+    left: 390px;
+}
+
+#fechar:hover{
+    cursor: pointer;
+}
+
+#material_Plastico{
+    display: none;
+}
+
+#material_Papel{
+    display: none;
+}
+
+#material_Metal{
+    display: none;
+}
+
+#material_Vidro{
+    display: none;
+}
+
+.papel, .plastico, .vidro, .metal{
+    cursor: pointer;
+}
+
+.papel{
+    margin-top: 60px;
+}
+
+.item_loja{
+    width: 210px;
+    height: 362px;
+}
+
+.pnl_loja{
+    width: 715px;
+    height: 92px;
+    margin-bottom: 0px;
+    margin-top: -90px;
+    margin-left: 140px;
+}
