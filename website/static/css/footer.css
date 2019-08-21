@@ -104,7 +104,6 @@ footer{
 
 .container_redes{
     display: flex;
-    justify-content: space-between;
     width: 150px;
     height: 50px;
     position: relative;
@@ -113,7 +112,6 @@ footer{
 }
 
 .midias{
-    width: 35px;
     height: 35px;
     margin-left: 10px;
     margin-right: 10px;
@@ -124,12 +122,10 @@ footer{
 }
 
 .gmail{
-    width: 45px;
     height: 45px;
     position: relative;
     top: 145px;
     left: -270px; 
-    margin-right: 10px;
     cursor: pointer;
 }
 

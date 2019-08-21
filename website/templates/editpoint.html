@@ -1,4 +1,4 @@
-{% extends 'shared/layout_escola.html' %}
+{% extends 'shared/layout_sn.html' %}
 {% load static %}
 
 {% block css %}
@@ -10,20 +10,21 @@
 {% endblock %}
 
 {% block conteudo %}
-<h1>aqui vai estar escrito edição de aluno</h1>
 
-<div class="edicao_aluno">
-    <form method="POST">
-        {% csrf_token %}
-        {% for field in form %}
-        <div class="divedit">
-            {{ field.label_tag }}
-            {{ field }}
-            {{ field.errors }}
-        </div>
-        {% endfor %}
-        <input class="bt_cadal" type="submit" value="Atribuir">
-    </form>
+<div class="d_white">
+    <div class="edicao_aluno">
+        <form method="POST">
+            {% csrf_token %}
+            {% for field in form %}
+            <div class="divedit">
+                {{ field.label_tag }}
+                {{ field }}
+                {{ field.errors }}
+            </div>
+            {% endfor %}
+            <input class="bt_cadal" type="submit" value="Atribuir">
+        </form>
+    </div>
 </div>
 
 {% endblock %}

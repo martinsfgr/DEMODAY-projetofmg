@@ -10,3 +10,77 @@ label[for=turma_aluno], #turma_aluno,
 label[for=genero_aluno], #genero_aluno{
     display: none;
 }
+
+section{
+    background-image: url('/static/img/escola/bgstar.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d_white{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 70%;
+    background-color: #0e1214ab;
+    border-radius: 5px;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 85px;
+}
+
+.divedit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label{
+    font-size: 35px;
+    text-transform: uppercase;
+    color: white;
+}
+
+input{
+    margin-top: 35px;
+}
+
+#pontuacao_aluno{
+    width: 160px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 3px;
+}
+
+input[type=submit]{
+    margin: 6px;
+    width: 65%;
+    height: 55px;
+    margin-left: 80px;
+    margin-top: 10px;
+    border: 0;
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+    background-color: #327035;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    bottom: -110px;
+}
+
+input[type=submit]:hover{
+    background-color: rgb(214, 200, 5);
+    transition: 1s;
+    border-radius: 7px;
+}

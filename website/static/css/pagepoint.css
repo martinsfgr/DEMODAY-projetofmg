@@ -11,7 +11,7 @@ section{
     background: #94c9b7;
 }
 
-.hd_pagedit{
+.hd_pagepoint{
     display: flex;
     flex-direction: row; 
     align-items: center;
@@ -20,7 +20,7 @@ section{
     bottom: 5px;
 }
 
-.img_pagedit{
+.img_pagepoint{
     margin-left: 115px;
     margin-top: 29px;
     margin-bottom: 15px;
@@ -83,44 +83,7 @@ section{
     width: 173.5px;
     margin-left: 10px;
     margin-top: 12px;
-}
-
-.lix_aluno{
-    width: 25px;
-    height: 25px;
-    padding: 5px;
-    background-color:#e94b46bb;
-    border-radius: 2px;
-    cursor: pointer;
-}
-
-.lp_aluno{
-    width: 25px;
-    height: 25px;
-    padding: 5px;
-    background-color: #bbd378be;
-    border-radius: 2px;
-    cursor: pointer;
-    margin-right: 4px;
-}
-
-.lp_aluno:hover{
-    background-color: #bad378;
-    transition: 0.7s;
-    border-radius: 7px;
-}
-
-.lix_aluno:hover{
-    background-color: #e94b46;
-    transition: 0.7s;
-    border-radius: 7px;
-}
-
-.dt_time{
-    text-align: center;
-    width: 70%;
-    font-size: 9px;
-    margin-left: 30px;
+    margin-bottom: 7px;
 }
 
 .img_header{
@@ -130,4 +93,32 @@ section{
     height: 195px;
     position: absolute;
     top: 722px;
+}
+
+.pt_aluno{
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    margin-left: 8px;
+    background-color: rgba(243, 227, 9, 0.85);
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.pt_aluno:hover{
+    background-color: rgba(243, 227, 9);
+    transition: 0.7s;
+    border-radius: 7px;
+}
+
+.pts{
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.row_ptstar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
 }

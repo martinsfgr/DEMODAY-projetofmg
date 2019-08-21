@@ -1,7 +1,7 @@
 .cadastro_aluno form{
     position: absolute;
     left: 485px;
-    top: 205px;
+    top: 175px;
     right: 0px;
     width: 30%;
 }
@@ -88,4 +88,11 @@ li{
     height: 195px;
     position: absolute;
     top: 460px;
+}
+
+.painelctrl{
+    width: 715px;
+    height: 92px;
+    margin-left: 317px;
+    margin-top: 35px;
 }
