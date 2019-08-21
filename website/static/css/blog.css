@@ -1,0 +1,14 @@
+body{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    font-family: 'Spinnaker', sans-serif;
+}
+
+a{
+    color: white;
+}
